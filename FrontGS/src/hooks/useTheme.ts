@@ -13,12 +13,8 @@ export function useTheme() {
     
     if (theme === 'light') {
       document.documentElement.classList.remove('dark');
-      document.body.classList.remove('bg-slate-900', 'text-slate-200');
-      document.body.classList.add('bg-white', 'text-gray-900');
     } else {
       document.documentElement.classList.add('dark');
-      document.body.classList.remove('bg-white', 'text-gray-900');
-      document.body.classList.add('bg-slate-900', 'text-slate-200');
     }
   }, [theme]);
 

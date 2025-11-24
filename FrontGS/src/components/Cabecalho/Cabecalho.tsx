@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { User } from '../../types/auth';
 import { useTheme } from '../../hooks/useTheme';
+import type { User } from '../../types/auth';
 
 export default function Cabecalho() {
   const navigate = useNavigate();
@@ -58,24 +58,6 @@ export default function Cabecalho() {
             ))}
           </nav>
 
-          {/* Theme Toggle Button */}
-          <button
-            onClick={toggleTheme}
-            className="hidden md:p-2 md:inline-flex text-gray-300 hover:text-white transition-colors"
-            aria-label="Toggle theme"
-            title={theme === 'dark' ? 'Modo claro' : 'Modo escuro'}
-          >
-            {theme === 'dark' ? (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.464 7.464a1 1 0 001.414-1.414L6.171 5.343a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-              </svg>
-            )}
-          </button>
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -88,6 +70,23 @@ export default function Cabecalho() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
+          </button>
+
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 text-gray-300 hover:text-white transition-colors"
+            title={theme === 'light' ? 'Modo escuro' : 'Modo claro'}
+          >
+            {theme === 'light' ? (
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.64 15.95c-.18-.8-.46-1.58-.84-2.3.02-.04.07-.16.07-.16a8.05 8.05 0 00-8.54-8.54c0 0-.12.05-.16.07A8.017 8.017 0 008.02 5.25c-.75.38-1.5.65-2.3.84-.36.18-.74.35-1.14.49.05.65.29 1.275.72 1.78C5.04 9.94 6.12 11.01 7.44 11.44c.5.23.91.34 1.44.34.13 0 .26-.01.39-.03-.13.87.04 1.76.51 2.57-.3.26-.58.56-.82.88-.23.28-.42.58-.58.88.36.18.74.35 1.14.49.8.18 1.58.46 2.3.84.04.02.16.07.16.07a8.05 8.05 0 008.54 8.54c0 0 .12-.05.16-.07a8.017 8.017 0 002.33-1.39c.3-.26.58-.56.82-.88.23-.28.42-.58.58-.88-.36-.18-.74-.35-1.14-.49-.8-.18-1.58-.46-2.3-.84-.04-.02-.16-.07-.16-.07a8.05 8.05 0 00-8.54-8.54z" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3v1m0 16v1m9-9h-1m-16 0H1m15.364 1.636l.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            )}
           </button>
 
           {/* User Menu */}
@@ -161,32 +160,6 @@ export default function Cabecalho() {
                   {item.label}
                 </button>
               ))}
-              
-              {/* Mobile Theme Toggle */}
-              <button
-                onClick={() => {
-                  toggleTheme();
-                  setMobileMenuOpen(false);
-                }}
-                className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all text-left flex items-center gap-2"
-              >
-                {theme === 'dark' ? (
-                  <>
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                    </svg>
-                    Modo Claro
-                  </>
-                ) : (
-                  <>
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.464 7.464a1 1 0 001.414-1.414L6.171 5.343a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-                    </svg>
-                    Modo Escuro
-                  </>
-                )}
-              </button>
-
               {user ? (
                 <>
                   <button

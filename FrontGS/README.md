@@ -105,9 +105,7 @@ npm run preview
 ```
 
 ### Deploy
-🌐 **Aplicação em Produção**: [https://seu-projeto.vercel.app](https://seu-projeto.vercel.app)
-
-A aplicação está hospedada na Vercel e atualiza automaticamente a cada push na branch `main`.
+🌐 **Aplicação em Produção**: [https://seu-projeto.vercel.app](https://vercel.com/gabrielfachins-projects/front-deploy-up-u-3exn)
 
 ---
 

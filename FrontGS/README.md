@@ -1,86 +1,79 @@
-📖 Sobre o Projeto
-A Enfermeira Digital é uma aplicação web desenvolvida para democratizar o acesso à teleconsulta médica, especialmente para pessoas com:
+# Up'U - Plataforma de Desenvolvimento de Carreira em TI
 
-🦽 Deficiências físicas ou visuais
-👴 Dificuldades com tecnologia (idosos)
-🌍 Acesso limitado a cuidadores ou suporte técnico
+## 📖 Sobre o Projeto
 
-🎯 Objetivo Principal
-Criar uma inteligência artificial assistente que acompanha o paciente durante todo o processo de teleconsulta, oferecendo:
+Up'U é uma plataforma inovadora que conecta desenvolvedores e profissionais de TI às tendências do mercado de tecnologia. Através de análise de dados e personalização, ajudamos você a traçar sua jornada de aprendizado e manter-se atualizado com as demandas do setor.
 
-⏰ Lembretes de consultas agendadas
-🎥 Verificação automática de câmera e microfone
-📝 Armazenamento de dúvidas para perguntar ao médico
-🔊 Acessibilidade com TTS (Text-to-Speech) e STT (Speech-to-Text)
-🧭 Guia passo a passo para entrar na consulta
+### 🎯 Objetivo Principal
 
-✨ Funcionalidades
-🏠 Página Inicial
+Facilitar o desenvolvimento de carreira em TI oferecendo:
+- 📊 Análise de tendências de mercado em tempo real
+- 🎯 Recomendações personalizadas baseadas em seu perfil
+- 🚀 Planos de carreira estruturados e alcançáveis
+- 📚 Recursos de aprendizado curados
 
-Apresentação clara do projeto
-Design responsivo e acessível
-Navegação intuitiva
+## 📑 Sumário
 
-👤 Sistema de Autenticação
+1. [Sobre o Projeto](#-sobre-o-projeto)
+2. [Status do Projeto](#-status-do-projeto)
+3. [Funcionalidades](#-funcionalidades)
+4. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+5. [Instalação](#-instalação)
+6. [Como Usar](#-como-usar)
+7. [Estrutura de Pastas](#-estrutura-de-pastas)
+8. [Endpoints ou Rotas Principais](#-endpoints-ou-rotas-principais)
+9. [Screenshots / Demonstração](#-screenshots--demonstração)
+10. [Contato](#-contato)
 
-Cadastro de novos usuários
-Login seguro com validação
-Gerenciamento de sessão com localStorage
+---
 
-📊 Perfil do Usuário
+## ✨ Funcionalidades
 
-Visualização de dados pessoais
-Edição de nome e data de nascimento
-Exclusão de conta com confirmação
-Logout seguro
+### Implementadas
+- ✅ Sistema de autenticação completo (login/cadastro)
+- ✅ Perfil de usuário com edição de dados
+- ✅ Dashboard personalizado
+- ✅ FAQ interativo
+- ✅ Formulário de contato
 
-📞 Área de Contato
+### Em Desenvolvimento
+- 🔄 Sistema de análise de tendências de mercado
+- 🔄 Recomendações personalizadas
+- 🔄 Plano de carreira interativo
 
-Formulário validado para envio de mensagens
-Feedback visual de erros
-Visualização de mensagens enviadas
+---
 
-❓ FAQ Interativo
+## 🛠️ Tecnologias Utilizadas
 
-Perguntas frequentes expansíveis
-Navegação por parâmetros de URL
-Interface limpa e organizada
+### Frontend
+- **React 19.1.1** - Biblioteca para construção de interfaces
+- **TypeScript 5.8.3** - Superset JavaScript com tipagem estática
+- **Vite 7.1.2** - Build tool moderno e rápido
+- **Tailwind CSS 4.1.13** - Framework CSS utility-first
 
-👥 Página de Integrantes
+### Validação
+- **React Hook Form 7.66.0** - Gerenciamento de formulários
 
-Informações completas da equipe
-Fotos e dados dos membros
-Design em cards responsivos
+### Roteamento
+- **React Router Dom 7.9.1** - Navegação entre páginas
 
+### Backend Integration
+- **API REST** - Comunicação com backend Java/Quarkus
+- **Fetch API** - Requisições HTTP nativas
 
-🛠️ Tecnologias Utilizadas
-React
-TypeScript
-Vite
+---
 
-Estilização
+## 🚀 Instalação
 
-Tailwind CSS 4.1.13 - Framework CSS utility-first
+### Pré-requisitos
+- Node.js 18+ instalado
+- npm ou yarn
+- Git
 
-Validação
+### Passo a passo
 
-React Hook Form 
-Validações nativas do HTML5
-
-Backend Integration
-
-API REST - Comunicação com backend Java/Quarkus
-Fetch API - Requisições HTTP nativas
-
-🚀 Como Executar o Projeto
-Pré-requisitos
-
-Node.js 18+ instalado
-npm
-Git
-
-Instalação
-bash# Clone o repositório
+```bash
+# Clone o repositório
 git clone https://github.com/1TDSPW-Challenge-HC/Front-End-REACT.git
 
 # Entre na pasta do projeto
@@ -91,46 +84,141 @@ npm install
 
 # Execute o projeto em modo desenvolvimento
 npm run dev
-O projeto estará rodando em http://localhost:5173
+```
+---
 
-🌐 API Backend
-O frontend se comunica com uma API REST Java/Quarkus hospedada no Render:
-Base URL: https://java-jdbc-zry5.onrender.com
-Endpoints Disponíveis
-MétodoEndpointDescriçãoGET/usuarioLista todos os usuáriosPOST/usuarioCadastra novo usuárioPUT/usuario/{id}Atualiza usuário por IDDELETE/usuario/{id}Remove usuário por ID
-Estrutura de Dados
-typescriptinterface User {
-  idUsuario?: number;
-  nome: string;
-  email: string;
-  senha?: string;
-  dtNascimento?: string;
-}
+## 💻 Como Usar
 
-👥 Equipe de Desenvolvimento
+### Desenvolvimento Local
+```bash
+npm run dev
+```
+
+### Build para Produção
+```bash
+npm run build
+```
+
+### Preview da Build
+```bash
+npm run preview
+```
+
+### Deploy
+🌐 **Aplicação em Produção**: [https://seu-projeto.vercel.app](https://seu-projeto.vercel.app)
+
+A aplicação está hospedada na Vercel e atualiza automaticamente a cada push na branch `main`.
+
+---
+
+## 📁 Estrutura de Pastas
+
+```
+FrontCH/
+├── public/
+│   └── assets/
+│       └── img/              # Imagens estáticas
+├── src/
+│   ├── components/           # Componentes reutilizáveis
+│   │   ├── Cabecalho/
+│   │   └── Rodape/
+│   ├── routes/              # Páginas da aplicação
+│   │   ├── Home/
+│   │   ├── Login/
+│   │   ├── Cadastro/
+│   │   ├── Perfil/
+│   │   ├── Sobre/
+│   │   ├── Integrantes/
+│   │   ├── FAQ/
+│   │   ├── Contato/
+│   │   └── Error/
+│   ├── services/            # Serviços de API
+│   │   └── api.ts
+│   ├── types/               # Definições de tipos TypeScript
+│   │   └── auth.ts
+│   ├── App.tsx              # Componente raiz
+│   └── main.tsx             # Ponto de entrada
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── tailwind.config.js
+```
+
+---
+
+## 🔗 Endpoints ou Rotas Principais
+
+### Rotas Públicas
+- `/` - Página inicial
+- `/sobre` - Sobre o projeto
+- `/integrantes` - Equipe de desenvolvimento
+- `/faq` - Perguntas frequentes
+- `/faq/:id` - FAQ específica
+- `/contato` - Formulário de contato
+- `/login` - Autenticação
+- `/cadastro` - Registro de novo usuário
+
+### Rotas Privadas (requerem autenticação)
+- `/perfil` - Perfil do usuário
+
+### API Backend
+Base URL: `https://java-jdbc-zry5.onrender.com`
+
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/usuario` | Lista todos os usuários |
+| POST | `/usuario` | Cadastra novo usuário |
+| PUT | `/usuario/{id}` | Atualiza usuário por ID |
+| DELETE | `/usuario/{id}` | Remove usuário por ID |
+
+
+
+### Equipe de Desenvolvimento
+
 <table>
   <tr>
     <td align="center">
-      <b>Gabriel Fachin</b><br>
-      <sub>RM: 561551</sub><br>
-      <sub>1TDSPW</sub>
+      <sub><b>Gabriel Fachin</b></sub><br>
+      <sub>RM: 561551 | 1TDSPW</sub><br>
     </td>
     <td align="center">
-      <b>Iago Dias</b><br>
-      <sub>RM: 565708</sub><br>
-      <sub>1TDSPW</sub>
+      <sub><b>Iago Dias</b></sub><br>
+      <sub>RM: 565708 | 1TDSPW</sub><br>
+      </a>
     </td>
     <td align="center">
-      <b>Fernando Charlles</b><br>
-      <sub>RM: 566482</sub><br>
-      <sub>1TDSPW</sub>
+      <sub><b>Fernando Charlles</b></sub><br>
+      <sub>RM: 566482 | 1TDSPW</sub><br>
+      </a>
+      </a>
     </td>
   </tr>
 </table>
 
-🌐 Repositório GitHub: https://github.com/1TDSPW-Challenge-HC/Front-End-REACT.git
+---
+
+## 📸 Screenshots / Demonstração
+
+### 🎥 Vídeo de Apresentação
+https://www.youtube.com/watch?v=SEU_VIDEO_ID
 
 
-<div align="center">
-Facilitando o acesso à saúde através da tecnologia
-</div>
+## 📞 Contato
+
+### Gabriel Fachin
+- **RM**: 561551
+- **Turma**: 1TDSPW
+- **GITHUB**: https://github.com/GabrielFachin
+
+### Iago Dias
+- **RM**: 565708
+- **Turma**: 1TDSPW
+- **GITHUB**: https://github.com/IagoDAinette
+
+### Fernando Charlles
+- **RM**: 566482
+- **Turma**: 1TDSPW
+- **GITHUB**: https://github.com/Sigmachr
+
+---

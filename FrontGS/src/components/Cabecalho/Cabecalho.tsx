@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTheme } from '../../hooks/useTheme';
 import type { User } from '../../types/auth';
 
 export default function Cabecalho() {
   const navigate = useNavigate();
-  const { theme, toggleTheme } = useTheme();
   const [user, setUser] = useState<User | null>(null);
   const [showMenu, setShowMenu] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -70,23 +68,6 @@ export default function Cabecalho() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
-
-          {/* Theme Toggle Button */}
-          <button
-            onClick={toggleTheme}
-            className="p-2 text-gray-300 hover:text-white transition-colors"
-            title={theme === 'light' ? 'Modo escuro' : 'Modo claro'}
-          >
-            {theme === 'light' ? (
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M21.64 15.95c-.18-.8-.46-1.58-.84-2.3.02-.04.07-.16.07-.16a8.05 8.05 0 00-8.54-8.54c0 0-.12.05-.16.07A8.017 8.017 0 008.02 5.25c-.75.38-1.5.65-2.3.84-.36.18-.74.35-1.14.49.05.65.29 1.275.72 1.78C5.04 9.94 6.12 11.01 7.44 11.44c.5.23.91.34 1.44.34.13 0 .26-.01.39-.03-.13.87.04 1.76.51 2.57-.3.26-.58.56-.82.88-.23.28-.42.58-.58.88.36.18.74.35 1.14.49.8.18 1.58.46 2.3.84.04.02.16.07.16.07a8.05 8.05 0 008.54 8.54c0 0 .12-.05.16-.07a8.017 8.017 0 002.33-1.39c.3-.26.58-.56.82-.88.23-.28.42-.58.58-.88-.36-.18-.74-.35-1.14-.49-.8-.18-1.58-.46-2.3-.84-.04-.02-.16-.07-.16-.07a8.05 8.05 0 00-8.54-8.54z" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 3v1m0 16v1m9-9h-1m-16 0H1m15.364 1.636l.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            )}
           </button>
 
           {/* User Menu */}

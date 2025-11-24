@@ -212,15 +212,18 @@ https://youtu.be/6_pga649bU4
 - **RM**: 561551
 - **Turma**: 1TDSPW
 - **GITHUB**: https://github.com/GabrielFachin
+- **Linkedin**: https://www.linkedin.com/in/gabriel-fachin-de-oliveira-9a0616240
 
 ### Iago Dias
 - **RM**: 565708
 - **Turma**: 1TDSPW
 - **GITHUB**: https://github.com/IagoDAinette
+- **Linkedin**: https://www.linkedin.com/in/iago-ainette-ba8294363?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ### Fernando Charlles
 - **RM**: 566482
 - **Turma**: 1TDSPW
 - **GITHUB**: https://github.com/Sigmachr
+- **Linkedin**: https://www.linkedin.com/in/charlles-fernandes-540713359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
 ---

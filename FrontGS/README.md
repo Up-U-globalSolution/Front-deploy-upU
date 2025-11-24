@@ -74,10 +74,10 @@ Facilitar o desenvolvimento de carreira em TI oferecendo:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/1TDSPW-Challenge-HC/Front-End-REACT.git
+git clone https://github.com/GabrielFachin/frontGS
 
 # Entre na pasta do projeto
-cd Front-End-REACT/FrontCH
+cd Front-End-REACT/FrontGS
 
 # Instale as dependências
 npm install
@@ -110,6 +110,10 @@ npm run preview
 A aplicação está hospedada na Vercel e atualiza automaticamente a cada push na branch `main`.
 
 ---
+
+### Link do repositório
+
+https://github.com/GabrielFachin/frontGS
 
 ## 📁 Estrutura de Pastas
 
@@ -201,7 +205,7 @@ Base URL: `https://java-jdbc-zry5.onrender.com`
 ## 📸 Screenshots / Demonstração
 
 ### 🎥 Vídeo de Apresentação
-https://www.youtube.com/watch?v=SEU_VIDEO_ID
+https://youtu.be/6_pga649bU4
 
 
 ## 📞 Contato

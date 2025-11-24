@@ -67,20 +67,6 @@ export default function Sobre() {
             </div>
           </div>
 
-          {/* Tech Stack */}
-          <div className="p-8 rounded-xl bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/20">
-            <h2 className="text-2xl font-bold text-white mb-4">Tecnologias Utilizadas</h2>
-            <div className="flex flex-wrap gap-3">
-              {['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Java/Quarkus', 'Oracle DB'].map((tech) => (
-                <span
-                  key={tech}
-                  className="px-4 py-2 rounded-lg bg-slate-800/50 border border-purple-500/30 text-gray-300 font-medium"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
     </main>
